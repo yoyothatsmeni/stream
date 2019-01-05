@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
  
 
-const devs = ["408374252291751976"]
+const devs = ["514541885533061123"]
 
 const adminprefix = "!";
 client.on('message', message => {
@@ -46,7 +46,7 @@ client.on('message', message => {
       if (!devs.includes(message.author.id)) return;
           message.channel.send(`:warning:️ **Bot restarting by ${message.author.username}**`);
         console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        console.log(`⚠️ Bot restarting... ⚠️`);
+        console.log(`⚠️ restarting... ⚠️`);
         console.log("===============================================\n\n");
         client.destroy();
         child_process.fork(__dirname + "/bot.js");
