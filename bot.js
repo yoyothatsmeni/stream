@@ -18,7 +18,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else 
-    if (message.content === (adminprefix + "Percie")) {
+    if (message.content === (adminprefix + "dontcareyoyo")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'wt')) {
@@ -29,12 +29,12 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else     
-    if (message.content.startsWith(adminprefix + 'setname')) {
+    if (message.content.startsWith(adminprefix + 'dontcareyoyo')) {
   client.user.setUsername(argresult).then
       message.channel.sendMessage(`**${argresult}** : Done :>`)
   return message.reply("**You Can't Change Your Name ,Only After Two Hours :>**");
   } else
-    if (message.content.startsWith(adminprefix + 'setavatar')) {
+    if (message.content.startsWith(adminprefix + 'dontcareyoyo')) {
   client.user.setAvatar(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
         } else     
@@ -42,7 +42,7 @@ client.on('message', message => {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
       message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   }
-    if(message.content === adminprefix + "restart") {
+    if(message.content === adminprefix + "dontcareyoyo") {
       if (!devs.includes(message.author.id)) return;
           message.channel.send(`:warning:️ **Bot restarting by ${message.author.username}**`);
         console.log("\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
